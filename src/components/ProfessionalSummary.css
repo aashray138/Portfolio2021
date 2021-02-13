@@ -1,0 +1,42 @@
+.all--info{
+    padding: 4rem;
+    background: #fff;
+
+}
+
+.all-info-edu{
+    background-image: url('./images/wmu.png') ;
+    background-position: right;
+    background-position: relative;
+    background-repeat: no-repeat;
+    padding-right: 2rem;
+}
+
+.education >h1{
+    color: rgb(53, 52, 52);
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
+}
+
+.school{
+    text-align: center;
+    padding-bottom: 6rem;
+
+}
+.work_experience{
+    background: #fff;
+    
+}
+
+.work_experience >h1{
+    color: darkslategray;
+}
+
+.projectss{
+    color: white;
+    background: linear-gradient(90deg, rgb(43, 43, 126) 2%, rgb(46, 97, 93) 100%);
+    font-size: 1.5rem;
+    margin-left: 70%;
+    padding: 4px 4px 4px 4px;
+}
+
