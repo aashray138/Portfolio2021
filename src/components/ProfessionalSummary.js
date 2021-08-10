@@ -11,7 +11,7 @@ const ProfessionalSummary = () => {
                     <h1> Education </h1> 
                     <div className = "school">
                     <h2> Bachelor's of Science in Computer Science @ Western Michigan University </h2>
-                    <br/> <h3>Graduation : Anticipated 2022 
+                    <br/> <h3>Graduation : Anticipated December 2021
                     <br/><br/>
                     Data Structures & Algorithms | Database Management Systems | Artificial Intelligence | Web Dev | Computer Systems </h3>
                     </div>
