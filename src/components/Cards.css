@@ -3,6 +3,10 @@
     background: #fff;
   }
   
+  .cardsMain{
+    color: #fff;
+    background-color: #252e48;
+  }
   
   .cards__container {
     display: flex;

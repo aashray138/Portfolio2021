@@ -30,7 +30,7 @@ class Footer extends React.Component {
                    </div>
 
                     <div className = "bottom">
-                        <h6> 2020 - Aashray Shrestha </h6>
+                        <h6> 2021 - Aashray Shrestha </h6>
                     </div>
 
 					</div>

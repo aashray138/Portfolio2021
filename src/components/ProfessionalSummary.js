@@ -6,20 +6,16 @@ import { Link } from 'react-router-dom';
 const ProfessionalSummary = () => {
     return (
         <div className = "all--info">
-            <div className="all-info-edu">
-                <div className ="education">
-                    <h1> Education </h1> 
-                    <div className = "school">
-                    <h2> Bachelor's of Science in Computer Science @ Western Michigan University </h2>
-                    <br/> <h3>Graduation : Anticipated December 2021
-                    <br/><br/>
-                    Data Structures & Algorithms | Database Management Systems | Artificial Intelligence | Web Dev | Computer Systems </h3>
-                    </div>
-                </div>
-            </div>
             <div className="work_experience">
                 <h1> Work Experiences</h1>
                 <br />  
+                <marquee scrollamount = "24" style={{ color: 'darkgray', fontSize: '2.3em' }}> Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
+                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
+                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
+                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
+                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
+                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
+                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 </marquee>
                 <div className = "work-list-first">
             <ul className ="cards">
 
