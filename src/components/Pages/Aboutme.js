@@ -7,7 +7,6 @@ import ProfessionalSummary from '../ProfessionalSummary'
 function Aboutme(){
     return(
         <>
-        <MainSectionAboutMe/>
         <ProfessionalSummary/>
         <Footer/>
          </>

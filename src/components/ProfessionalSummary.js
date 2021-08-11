@@ -2,86 +2,296 @@ import React from 'react'
 import './ProfessionalSummary.css'
 import WorkCardItem from './WorkCardItem';
 import { Link } from 'react-router-dom';
+import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 
 const ProfessionalSummary = () => {
-    return (
-        <div className = "all--info">
-            <div className="work_experience">
-                <h1> Work Experiences</h1>
-                <br />  
-                <marquee scrollamount = "24" style={{ color: 'darkgray', fontSize: '2.3em' }}> Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
-                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
-                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
-                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
-                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
-                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; 
-                Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;💻&nbsp; Academic Mentor 👨‍💻 </marquee>
-                <div className = "work-list-first">
-            <ul className ="cards">
+  return (
+    <div className="all--info">
+      <div className="work_experience">
+        <br />
+        <marquee scrollamount="18" style={{ color: '#252e48', fontSize: '2.3em' }}>
+          Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;📙&nbsp; Academic Mentor 👨‍💻 Author &nbsp;📚&nbsp;
+          Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;📙&nbsp; Academic Mentor 👨‍💻 Author &nbsp;📚&nbsp;
+          Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;📙&nbsp; Academic Mentor 👨‍💻 Author &nbsp;📚&nbsp;
+          Software Development Intern &nbsp;🖥️&nbsp; Student Mentor &nbsp;✨&nbsp; Frontend Web Developer &nbsp;⌨️&nbsp; IT Coordinator &nbsp;📙&nbsp; Academic Mentor 👨‍💻 Author &nbsp;📚&nbsp;
+        </marquee>
+        <div className="work-list-first">
+          <ul className="cards">
 
-            <WorkCardItem
-              text='IT Co-ordinator &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aug 2020 - Present '
-              place ='Campus Activities Board - Kalamazoo, MI'
-              responsibilities1 ='Optimize website by embedding code into Squarespace'
-              responsibilities2 ='Ensure to display the most updated, interesting, and accurate information to increase web traffic'
-              responsibilities3 = 'Customize the website themes and add graphics and animation to reflect the monthly events'
-              website ='wmucab.com'
-            />
+            <div>
+              <Timeline lineColor={'#ddd'}>
+                <TimelineItem
+                  key="001"
+                  dateComponent={(
+                    <div
+                      style={{
+                        display: 'block',
+                        float: 'left',
+                        padding: '10px',
+                        background: '#63ba8f',
+                        color: '#fff',
+                      }}
+                    >
+                      June 2021 - Present
+                    </div>
+                  )}
+                >
+                  <h2>Software Development Intern, SICPA Securink</h2>
+                  <h3 style={{ marginLeft: '10%' }}> Solutions Delivery Team</h3>
+                  <ul>
+                    <li>  Developed and tested frontend functionalities in different components such as forms, tables dynamically for the 4 SETS application in Vue.js </li>
+                    <li> Contributed to QA team by helping with Regression Testing and implementing automated testing using Cucumber. </li>
+                    <li> Creating a mock up mobile application using Flutter as a proof of concept for future developments.</li>
+                  </ul>
+                </TimelineItem>
 
-            <WorkCardItem
-              text='Student Mentor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; April 2019 - Present'
-              place ='Peer2Peer - Kalamazoo, MI'
-              responsibilities1 ='Utilize Salesforce, a CRM, to communicate with 150+ first year students by texting them biweekly and emailing monthly to help them with the transition to college'
-              responsibilities2 ='Track and analyze data using MS Excel to create plans for engagement and future communication'
-              responsibilities3 = 'Collaborate with other team members to develop videos released biweekly with an audience of over 4,000 students'
-              website ='instagram.com\peer2peerwmu'
-            />   
+                <TimelineItem
+                  key="002"
+                  dateComponent={(
+                    <div
+                      style={{
+                        display: 'block',
+                        float: 'left',
+                        padding: '10px',
+                        background: '#7774d1',
+                        color: '#fff',
+                      }}
+                    >
+                      April 2021 - June 2021
+                    </div>
+                  )}
+                >
+                  <h2>Mobile App Developer, Develop for Good </h2>
+                  <h3 style={{ marginLeft: '10%' }}> iOS and Android using Flutter</h3>
+                  <ul>
+                    <li> Developed a cross platform native mobile application for the Social Income non-profit organization using Flutter and Firebase. </li>
+                    <li> Designed and implemented the structure of data storage in the back-end to reduce load time as the app will be used primarily in Sierra Leone </li>
+                    <li> Spearheaded the use of Firebase authentication and added the OTP security feature along with custom authentication. </li>
+                  </ul>
+                </TimelineItem>
 
-            <WorkCardItem
-              text='Frontend Web Developer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; May 2020 - Aug 2020 '
-              place ='Delovery - San Francisco, CA'
-              responsibilities1 ='Delovery is a non-profit, with a free market and delivery service that aims to reinvigorate local communities'
-              responsibilities2 ='Integrated code into Shopify and Carrd to implement the front end website using HTML, CSS, and JavaScript- delovery.org'
-              responsibilities3 = 'Implemented the store-front using React.js - which will be used once the store is ready to launch'
-              website ='delovery.com'
-            />
+                <TimelineItem
+                  key="003"
+                  dateComponent={(
+                    <div
+                      style={{
+                        display: 'block',
+                        float: 'left',
+                        padding: '10px',
+                        background: '#ba8556',
+                        color: '#fff',
+                      }}
+                    >
+                      September 2020 - April 2021
+                    </div>
+                  )}
+                >
+                  <h2>IT Coordinator, Campus Activities Board</h2>
+                  <h3 style={{ marginLeft: '10%' }}> Squarespace </h3>
+                  <ul>
+                    <li> Optimize website by embedding code into Squarespace and adding in animtations</li>
+                    <li> Ensure to display the most updated, interesting, and accurate information to increase web traffic</li>
+                    <li> Customize the website themes and add graphics and animation to reflect the monthly events </li>
+                  </ul>
+                </TimelineItem>
 
-            <WorkCardItem
-              text='Peer Mentor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; December 2019 - August 2020'
-              place ='Mentoring for Success - Kalamazoo, MI'
-              responsibilities2 ='Individualized and group tutoring for students in Calculus, English, Psychology, Biology, Chemistry, Computer Science'
-              responsibilities1 ='Mentor for participants of various target populations such as the Office of Disability Services for Students, Michigan GEAR UP Program, College Assistant Migrant Program, and TRiO'
-              responsibilities3 = 'Presented weekly presentations and assisted with office duties - documentation, forum participation, and student ratings'
-              website ='instagram.com\peer2peerwmu'
-            />     
+                <TimelineItem
+                  key="004"
+                  dateComponent={(
+                    <div
+                      style={{
+                        display: 'block',
+                        float: 'left',
+                        padding: '10px',
+                        background: '#608ce2',
+                        color: '#fff',
+                      }}
+                    >
+                      May 2020 - August 2020
+                    </div>
+                  )}
+                >
+                  <h2>Front end web Developer, Delovery </h2>
+                  <h3 style={{ marginLeft: '10%' }}> HTML, CSS, JS, & React.js </h3>
+                  <ul>
+                    <li> Delovery is a non-profit, with a free market and delivery service that aims to reinvigorate local communities</li>
+                    <li> Integrated code into Shopify and Carrd to implement the front end website using HTML, CSS, and JavaScript</li>
+                    <li> Implemented the store-front using React.js and worked on multiple custom card components and login components </li>
+                  </ul>
+                </TimelineItem>
 
-            <WorkCardItem
-              text='IT Administrative Intern&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; April 2019 - August 2019'
-              place ='MyExamsPrep - Ashburn, VA'
-              responsibilities1 ='Created an admin system using HTML, CSS, JavaScript, PHP, and integrated database to update student information, payments and keep track of employee work hours'
-              responsibilities2 ='Updated and managed the student database and created monthly reports for 100+ students'
-              responsibilities3 = 'Assisted with troubleshooting issues and provide technical support'
-              website ='myexamsprep.com'
-            />     
+                <TimelineItem
+                  key="005"
+                  dateComponent={(
+                    <div
+                      style={{
+                        display: 'block',
+                        float: 'left',
+                        padding: '10px',
+                        background: '#2d9cc9',
+                        color: '#fff',
+                      }}
+                    >
+                    April 2019 - August 2020
+                    </div>
+                  )}
+                >
+                  <h2>Associate Program Manager, WMU</h2>
+                  <h3 style={{ marginLeft: '10%' }}> Office Jokester Award </h3>
+                  <ul>
+                    <li> Utilized Salesforce to communicate with 150+ first year students by texting them biweekly and emailing monthly to help them with the transition to college.</li>
+                    <li> Effectively lead alongside the professional OST team through active participation, planning, implementation, and supervision of various student leader groups 
+                      of orientation programs.</li>
+                  </ul>
+                </TimelineItem>
 
-            <WorkCardItem
-              text='Office Intern&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; April 2017 - August 2017'
-              place ='Everest International Model United Nations-  Kathmandu, Nepal'
-              responsibilities1 ='Documented and updated various spreadsheets daily related to tasks that led to the conference'
-              responsibilities2 ='Communicated with over 200 participants scheduled to attend the largest MUN in Nepal'
-              responsibilities3 = 'Communicated with official sponsors and vendors for updates'
-              website ='instagram.com\peer2peerwmu'
-            />             
-            </ul>
+                <TimelineItem
+                  key="006"
+                  dateComponent={(
+                    <div
+                      style={{
+                        display: 'block',
+                        float: 'left',
+                        padding: '10px',
+                        background: '#e44553',
+                        color: '#fff',
+                      }}
+                    >
+                    December 2019 - August 2020
+                    </div>
+                  )}
+                >
+                  <h2>Academic Mentor, Mentoring for Success</h2>
+                  <ul>
+                    <li> Individualized and group tutoring for students in Calculus, English, Psychology, Biology, Chemistry, Computer Science.</li>
+                    <li> Mentor for participants of various target populations such as the Office of Disability Services for Students, Michigan GEAR UP 
+                      Program, College Assistant Migrant Program, and TRiO</li>
+                    <li> Presented weekly presentations and assisted with office duties - documentation, forum participation, and student rating </li>
 
-            <Link className="projectss" to='/projects'>
-                    Click here to take a look at my projects
-            </Link>
+                  </ul>
+                </TimelineItem>
+                <TimelineItem
+                  key="007"
+                  dateComponent={(
+                    <div
+                      style={{
+                        display: 'block',
+                        float: 'left',
+                        padding: '10px',
+                        background: '#b554e3',
+                        color: '#fff',
+                      }}
+                    >
+                    May 2019 - August 2019
+                    </div>
+                  )}
+                >
+                  <h2>IT Administrative Intern , MyExamsPrep</h2>
+                  <ul>
+                    <li> Created an admin system using HTML, CSS, JavaScript, PHP, and integrated database to update student information, payments and keep track of employee work hours</li>
+                    <li> Updated and managed the student database and created monthly reports for 100+ students</li>
+                    <li> Assisted with troubleshooting issues and provide technical support. </li>
+
+                  </ul>
+                </TimelineItem>
+
+                <TimelineItem
+                  key="008"
+                  dateComponent={(
+                    <div
+                      style={{
+                        display: 'block',
+                        float: 'left',
+                        padding: '10px',
+                        background: '#2ba976',
+                        color: '#fff',
+                      }}
+                    >
+                    Aug 2018 - December 2019
+                    </div>
+                  )}
+                >
+                  <h2>Student Supervisor, Dining Halls</h2>
+                  <ul>
+                  </ul>
+                </TimelineItem>
+
+                <TimelineItem
+                  key="009"
+                  dateComponent={(
+                    <div
+                      style={{
+                        display: 'block',
+                        float: 'left',
+                        padding: '10px',
+                        background: '#d35d4b',
+                        color: '#fff',
+                      }}
+                    >
+                    August 2017
+                    </div>
+                  )}
+                >
+                  <h2> Enrolled in College</h2>
+                  <ul>
+                  </ul>
+                </TimelineItem>
+
+                <TimelineItem
+                  key="009"
+                  dateComponent={(
+                    <div
+                      style={{
+                        display: 'block',
+                        float: 'left',
+                        padding: '10px',
+                        background: '#3e34b8',
+                        color: '#fff',
+                      }}
+                    >
+                    Apr 2017 - Aug 2017
+                    </div>
+                  )}
+                >
+                  <h2>Office Intern, Youth Thinker's Society</h2>
+                  <ul>
+                  </ul>
+                </TimelineItem>
+
+                <TimelineItem
+                  key="009"
+                  dateComponent={(
+                    <div
+                      style={{
+                        display: 'block',
+                        float: 'left',
+                        padding: '10px',
+                        background: '#63ba8f',
+                        color: '#fff',
+                      }}
+                    >
+                    August 2016
+                    </div>
+                  )}
+                >
+                  <h2> Graduated High School </h2>
+                  <ul>
+                  </ul>
+                </TimelineItem>
+
+              </Timeline>
             </div>
-              
-            </div>
+
+          </ul>
+
+          <Link className="projectss" to='/projects'>
+            Click here to take a look at my projects
+          </Link>
         </div>
-    )
+
+      </div>
+    </div>
+  )
 }
 
 export default ProfessionalSummary
