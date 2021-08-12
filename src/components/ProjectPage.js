@@ -1,13 +1,16 @@
 import React from 'react';
 import './Cards.css';
-import CardItem from './CardItem';
 import SimpleSlider from './Carousel/Carousel';
 
 function ProjectPage() {
   return (
-    <div className='cards'>
-      <SimpleSlider></SimpleSlider>
-    </div>
+    <>
+      <br/>
+      <br/>
+      <SimpleSlider> </SimpleSlider>
+      <br/>
+      <br/>
+    </>
   );
 }
 

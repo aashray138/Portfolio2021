@@ -15,7 +15,7 @@ export default function SimpleSlider() {
         fade: true,
         arrows: true,
         autoplaySpeed: 2000,
-        
+        infinite: true,    
     };
     return (
         <Slider {...settings}>
