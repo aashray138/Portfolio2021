@@ -17,7 +17,6 @@ const ProfessionalSummary = () => {
         </marquee>
         <div className="work-list-first">
           <ul className="cards">
-
             <div>
               <Timeline lineColor={'#ddd'}>
                 <TimelineItem
@@ -132,7 +131,7 @@ const ProfessionalSummary = () => {
                         color: '#fff',
                       }}
                     >
-                    April 2019 - August 2020
+                      April 2019 - August 2020
                     </div>
                   )}
                 >
@@ -140,7 +139,7 @@ const ProfessionalSummary = () => {
                   <h3 style={{ marginLeft: '10%' }}> Office Jokester Award </h3>
                   <ul>
                     <li> Utilized Salesforce to communicate with 150+ first year students by texting them biweekly and emailing monthly to help them with the transition to college.</li>
-                    <li> Effectively lead alongside the professional OST team through active participation, planning, implementation, and supervision of various student leader groups 
+                    <li> Effectively lead alongside the professional OST team through active participation, planning, implementation, and supervision of various student leader groups
                       of orientation programs.</li>
                   </ul>
                 </TimelineItem>
@@ -157,14 +156,14 @@ const ProfessionalSummary = () => {
                         color: '#fff',
                       }}
                     >
-                    December 2019 - August 2020
+                      December 2019 - August 2020
                     </div>
                   )}
                 >
                   <h2>Academic Mentor, Mentoring for Success</h2>
                   <ul>
                     <li> Individualized and group tutoring for students in Calculus, English, Psychology, Biology, Chemistry, Computer Science.</li>
-                    <li> Mentor for participants of various target populations such as the Office of Disability Services for Students, Michigan GEAR UP 
+                    <li> Mentor for participants of various target populations such as the Office of Disability Services for Students, Michigan GEAR UP
                       Program, College Assistant Migrant Program, and TRiO</li>
                     <li> Presented weekly presentations and assisted with office duties - documentation, forum participation, and student rating </li>
 
@@ -182,7 +181,7 @@ const ProfessionalSummary = () => {
                         color: '#fff',
                       }}
                     >
-                    May 2019 - August 2019
+                      May 2019 - August 2019
                     </div>
                   )}
                 >
@@ -207,7 +206,7 @@ const ProfessionalSummary = () => {
                         color: '#fff',
                       }}
                     >
-                    Aug 2018 - December 2019
+                      Aug 2018 - December 2019
                     </div>
                   )}
                 >
@@ -228,7 +227,7 @@ const ProfessionalSummary = () => {
                         color: '#fff',
                       }}
                     >
-                    August 2017
+                      August 2017
                     </div>
                   )}
                 >
@@ -249,7 +248,7 @@ const ProfessionalSummary = () => {
                         color: '#fff',
                       }}
                     >
-                    Apr 2017 - Aug 2017
+                      Apr 2017 - Aug 2017
                     </div>
                   )}
                 >
@@ -270,7 +269,7 @@ const ProfessionalSummary = () => {
                         color: '#fff',
                       }}
                     >
-                    August 2016
+                      August 2016
                     </div>
                   )}
                 >
@@ -281,14 +280,11 @@ const ProfessionalSummary = () => {
 
               </Timeline>
             </div>
-
           </ul>
-
           <Link className="projectss" to='/projects'>
             Click here to take a look at my projects
           </Link>
         </div>
-
       </div>
     </div>
   )
